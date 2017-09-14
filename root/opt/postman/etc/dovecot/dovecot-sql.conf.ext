@@ -1,0 +1,7 @@
+driver = sqlite
+connect = /data/users.db
+
+password_query = SELECT username, domainName, password FROM users WHERE username = '%n' AND domainName = '%d' AND disabled = 0
+user_query = SELECT home, uid, gid FROM users WHERE username = '%n' AND domainName = '%d' AND disabled = 0
+
+# For using doveadm -A:
